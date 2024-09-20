@@ -5,10 +5,15 @@
 //  Created by Boris Emorine on 6/20/20.
 //  Copyright © 2020 BorisEmorine. All rights reserved.
 //
-
+#if os(iOS)
 import UIKit
 
-extension UIColor {
+#else
+import AppKit
+
+#endif
+
+extension ColorKitColor {
     
     /// The cyan (C) channel of the CMYK color space.
     public var cyan: CGFloat {

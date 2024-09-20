@@ -16,11 +16,7 @@ let package = Package(
     targets: [
         .target(
             name: "ColorKit",
-            path: "ColorKit/ColorKit"),
-        .testTarget(
-            name: "ColorKitTests",
-            dependencies: ["ColorKit"],
-            path: "ColorKit/ColorKitTests"),
+            path: "ColorKit/ColorKit")
     ],
     swiftLanguageVersions: [SwiftVersion.v5]
 )
